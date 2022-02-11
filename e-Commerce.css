@@ -1,0 +1,223 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.margin {
+  margin: 0px 50px;
+}
+.header {
+  background: #fff5da;
+  /* width: 100%; */
+}
+/* ---------nav-bar-Start---------- */
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 5vh;
+  background-color: #ffd9a0;
+}
+.nav-bar div img {
+  width: 290px;
+  height: 40px;
+  /* padding: 20px; */
+}
+/* --------nav-bar-links-------- */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  /* margin-right: 30px; */
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+  /* margin: 0px 25px; */
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 300;
+}
+.nav-bar ul li a:hover {
+  background: #ffab2d;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+/* ---------nav-bar-end----------- */
+
+/* ----- heading-part-start----------- */
+.heading-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* -----------header-left-part--------- */
+.heading-left {
+  width: 45%;
+  height: 45%;
+  margin-left: 20px;
+}
+.heading-left h1 {
+  font-size: 3.5rem;
+}
+.heading-left p {
+  width: 80%;
+  text-align: justify;
+  margin-top: -30px;
+}
+
+.heading-left h1 span {
+  color: #ffab2d;
+}
+
+/* ---------------header-right-logo------------ */
+.heading-right {
+  margin-bottom: 20px;
+}
+.heading-right img {
+  width: 400px;
+  height: auto;
+  left: 0px;
+}
+/* -----------header-btn-------------- */
+.btn {
+  background: #ffab2d;
+  width: 150px;
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+.btn img {
+  width: 30px;
+  height: 30px;
+}
+.btn a {
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 800;
+}
+/* -----------------women & man-jacket--------------- */
+.woman-jacket {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.jacket-section .title {
+  font-size: 2rem;
+  margin-left: 50px;
+  padding: 10px 0px;
+  background-color: #fff6e9;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+}
+
+/* ---------------------card------------------ */
+.woman-jacket .card {
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card-content {
+  margin: 5px 15px;
+}
+.image {
+  width: 100%;
+  height: 350px;
+  background: rgba(228, 228, 228, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.card-img {
+  width: 80%;
+  height: 80%;
+}
+.item-description {
+  height: 150px;
+}
+
+.item-description .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+}
+.item-description .price h1 {
+  font-size: 2rem;
+  color: #ffab2d;
+}
+/* ----------------footer-section-------------- */
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-section .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.footer-image img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.footer-right {
+  margin-left: 50px;
+}
+.footer-right img {
+  width: 500px;
+  height: auto;
+}
+/* -------------media-query----------- */
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    margin-bottom: 20px;
+    background-color: #ffd9a0;
+    height: 15vh;
+  }
+  .nav-bar div img {
+    margin-top: -40px;
+  }
+  .nav-links {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 8vh;
+    width: 100%;
+  }
+  /* -----media footer--------------- */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-section .footer-right img {
+    margin-top: 20px;
+  }
+}
